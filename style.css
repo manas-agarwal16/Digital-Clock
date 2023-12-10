@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(16, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 5.7rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle .time{
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#hours, #minutes , #seconds{
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 3px;
+}
+.text{
+    letter-spacing: 2px;
+}
+
+.track{
+    stroke: black;
+    fill: none;
+    stroke-width: 1.5px;
+}
+.progress{
+    fill: none;
+    stroke-width: 3px;
+    stroke-dasharray: 440px;
+    /* stroke-dasharray: 440px; stroke-dasharray for svg creates a dotted line with gaps if one value given then for both line length and gap length. if two then respectively. its not necessary that the length will be same. jaha khatam hua circle vaha tk laboo(suraj vala lagoo) hoga. here 440px is given because its the circumference of the circle we have made. of radius 70. because maximum pura cover hoga circumference. */
+
+    stroke-dashoffset: 0;
+    /*  this property reveals the gap. if given 0 value means and stroke-dasharray is equal to circumference the gap will be zero and if given value equal to circumference then progress = 100%.  */
+}
+svg{
+    transform: rotate(270deg);
+}
+#progress_hours{
+    stroke: rgb(221, 82, 105);
+}
+#progress_minutes{
+    stroke: yellow;
+}
+#progress_seconds{
+    stroke: blue;
+}
+.range{
+    position: relative;
+    bottom: 24px;
+    font-size: larger;
+}
+h3{
+    font-size: larger;
+    letter-spacing: 2px;
+}

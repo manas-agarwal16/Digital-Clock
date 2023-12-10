@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Digital Clock</h1>
+
+    <div class="container">
+    
+    <div class="circle">
+        <svg width="250" height="250">
+            <circle cx="120" cy="120" r="70" class="track"></circle> <!--this circle to keep the track or gap.-->
+            <circle cx="120" cy="120" r="70" class="progress" id="progress_hours"></circle> <!--this circle for bright  lines. progress.-->
+        </svg>
+        <div class="time">
+            <div id="hours">00</div>
+            <div class="text">Hour</div>
+        </div>
+    </div>
+
+    <div class="circle">
+        <svg width="250" height="250">
+            <circle cx="120" cy="120" r="70" class="track"></circle>
+            <circle cx="120" cy="120" r="70" class="progress" id="progress_minutes"> </circle>
+        </svg>
+
+        <div class="time">
+            <div id="minutes" >00</div>
+            <div class="text">Minutes</div>
+        </div>
+    </div>
+
+    <div class="circle">
+        <svg width="250" height="250">
+            <circle cx="120" cy="120" r="70" class="track"></circle>
+            <circle cx="120" cy="120" r="70" class="progress" id="progress_seconds"></circle>
+        </svg>
+        <div class="time">
+            <div id="seconds">00</div>
+            <div class="text">Seconds</div>
+        </div>
+    </div>
+
+    <div class="range">AM</div>
+    </div>
+    <hr style="background-color: white;">
+    <h3>Using HTML , CSS and JAVASCRIPT  </h3>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
